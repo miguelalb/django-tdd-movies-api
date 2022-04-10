@@ -15,6 +15,7 @@ services:
   
   movies-db:
     image: postgres:10-alpine
+    restart: always
     volumes:
       - postgres_data:/var/lib/postgresql/data/
     environment:
